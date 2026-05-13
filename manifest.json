@@ -1,0 +1,16 @@
+{
+  "name": "cat ad blocker",
+  "description": "blocks ads with pictures of cute kitties",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }]
+}
