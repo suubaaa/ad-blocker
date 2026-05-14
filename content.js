@@ -31,3 +31,5 @@ async function replace() {
         element.replaceWith(img);
     }
 }
+
+replace();
