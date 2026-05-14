@@ -27,6 +27,7 @@ async function replace() {
 
     for(const element of elements) {
         const img = document.createElement('img');
+        img.style.width="100%";
         img.src = await catImage();
         element.replaceWith(img);
     }
